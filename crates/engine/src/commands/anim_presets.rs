@@ -1,4 +1,4 @@
-//! EffectCraft's own animation preset library (Effects & Presets ▸ * Animation Presets): the
+//! Tend's Effects's own animation preset library (Effects & Presets ▸ * Animation Presets): the
 //! Transitions category, original presets built on our Transition effects and layer opacity.
 //!
 //! Each preset adds effects (with values and keyframes) and/or keys layer properties, starting

@@ -95,7 +95,7 @@ pub fn session() -> Session {
     }
 }
 
-/// The platform config directory for EffectCraft (`EFFECTCRAFT_CONFIG_DIR` overrides):
+/// The platform config directory for Tend's Effects (`EFFECTCRAFT_CONFIG_DIR` overrides):
 /// `~/Library/Application Support/EffectCraft` (macOS), `%APPDATA%\EffectCraft` (Windows),
 /// `$XDG_CONFIG_HOME/effectcraft` or `~/.config/effectcraft` (Linux and others).
 pub fn config_dir() -> Option<std::path::PathBuf> {
@@ -108,7 +108,7 @@ pub fn config_dir() -> Option<std::path::PathBuf> {
         return home().map(|h| h.join("Library/Application Support/EffectCraft"));
     }
     if cfg!(target_os = "windows") {
-        return std::env::var_os("APPDATA").map(|a| PathBuf::from(a).join("EffectCraft"));
+        return std::env::var_os("APPDATA").map(|a| PathBuf::from(a).join("Tend's Effects"));
     }
     std::env::var_os("XDG_CONFIG_HOME").map(PathBuf::from).or_else(|| home().map(|h| h.join(".config"))).map(|c| c.join("effectcraft"))
 }

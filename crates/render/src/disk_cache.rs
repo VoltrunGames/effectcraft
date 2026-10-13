@@ -275,7 +275,7 @@ pub fn default_folder() -> PathBuf {
     if cfg!(windows)
         && let Some(l) = std::env::var_os("LOCALAPPDATA")
     {
-        return PathBuf::from(l).join("EffectCraft").join("Disk Cache");
+        return PathBuf::from(l).join("Tend's Effects").join("Disk Cache");
     }
     if let Some(x) = std::env::var_os("XDG_CACHE_HOME") {
         return PathBuf::from(x).join("effectcraft/disk-cache");

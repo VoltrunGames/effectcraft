@@ -1,12 +1,12 @@
-# Releasing EffectCraft
+# Releasing Tend's Effects
 
 Every push to the `release` branch runs [`.github/workflows/release.yml`](../.github/workflows/release.yml).
 It builds signed installers for macOS and Windows, packages for Linux and FreeBSD, and the web
 build, then creates or updates a
-**draft** GitHub Release named `EffectCraft v<version>`. Nobody sees a draft until a maintainer
+**draft** GitHub Release named `Tend's Effects v<version>`. Nobody sees a draft until a maintainer
 publishes it.
 
-User-facing names say **EffectCraft**. Files, binaries and ids stay lowercase
+User-facing names say **Tend's Effects**. Files, binaries and ids stay lowercase
 (`effectcraft-<version>-<platform>-<arch>.<ext>`).
 
 ## Cutting a release
@@ -19,14 +19,14 @@ User-facing names say **EffectCraft**. Files, binaries and ids stay lowercase
    cargo xtask version set 0.4.0       # or 0.4.0-rc.1; updates Cargo.toml and Cargo.lock
    ```
 
-   Open a PR titled `Release: EffectCraft v0.4.0` with that change (`Cargo.toml` and our crates
+   Open a PR titled `Release: Tend's Effects v0.4.0` with that change (`Cargo.toml` and our crates
    in `Cargo.lock` only) and merge it.
 2. **Check the gate.** Run `cargo xtask ci` on `main` (it runs clippy and the tests in release
    mode, as CI does), and check that `main`'s CI is green on every platform.
 3. **Push `main` to `release`** (a fast-forward): `git push origin main:release`. The `release`
    branch is protected; only maintainers can push to it. The workflow starts by itself.
 4. **Wait for the draft.** When every job is green (macOS notarization is the slow part), the
-   Releases page has a draft `EffectCraft v0.4.0`, tagged `v0.4.0` on the pushed commit, with
+   Releases page has a draft `Tend's Effects v0.4.0`, tagged `v0.4.0` on the pushed commit, with
    every artifact and `SHA256SUMS.txt`. Its notes are generated from the merged PRs.
 5. **Check it.** Download an installer or two, check them against `SHA256SUMS.txt`, and run
    `effectcraft --version` / `effectcraft-cli --version`. Read the job summaries: a `::warning::`
@@ -75,7 +75,7 @@ an upgrade that keeps it, a repair, uninstall, and the Program Files default. Th
 themselves are checked by hand.
 
 Every binary reports its version: `effectcraft --version`, `effectcraft-cli --version` and
-*Help › About EffectCraft*.
+*Help › About Tend's Effects*.
 
 ### Linux: the glibc baseline
 

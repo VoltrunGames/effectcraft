@@ -1,4 +1,4 @@
-//! Menu labels for EffectCraft's own engine tree in each translated language. Commands remain
+//! Menu labels for Tend's Effects's own engine tree in each translated language. Commands remain
 //! locale-independent. A command plus its source label distinguishes parameterised entries (e.g.
 //! blend modes). Empty command keys identify submenus. Dynamic filenames, user names and effect
 //! plug-in names remain verbatim; these catalogs only translate the fixed menu tree.
@@ -63,7 +63,7 @@ pub(crate) fn czech(app: &EffectcraftApp) -> bool {
 }
 
 /// Settings ▸ General ▸ Language ▸ Match System: the operating system's interface language
-/// where EffectCraft has it, else English (#229), as After Effects installs in the system's
+/// where Tend's Effects has it, else English (#229), as After Effects installs in the system's
 /// language. The browser build stays in English because it has no system-locale probe.
 fn system_language() -> &'static str {
     #[cfg(not(target_arch = "wasm32"))]
@@ -76,7 +76,7 @@ fn system_language() -> &'static str {
     supported(None)
 }
 
-/// The language EffectCraft shows for a BCP 47 locale (`ja-JP` → `ja`, `zh-Hans-CN` → `zh-hans`,
+/// The language Tend's Effects shows for a BCP 47 locale (`ja-JP` → `ja`, `zh-Hans-CN` → `zh-hans`,
 /// `zh-TW` → `zh-hant`, `uk-UA` → `uk`, `es-ES` → `es`, `pt-BR` → `pt-br`, `cs-CZ` → `cs`).
 fn supported(locale: Option<&str>) -> &'static str {
     let Some(locale) = locale else { return "en" };
@@ -257,8 +257,8 @@ pub(crate) fn submenu(app: &EffectcraftApp, source: &str, shown: String) -> Stri
 /// Chinese After Effects documentation and the catalogs the sibling Craft apps ship; see the
 /// pull request for the rows taken from #321.
 const SIMPLIFIED_CHINESE: &[(&str, &str, &str)] = &[
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "关于 EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "关于 Tend's Effects..."),
     ("", "Settings...", "设置..."),
     ("app.settings", "General...", "常规..."),
     ("app.settings", "Startup & Repair...", "启动和修复..."),
@@ -277,10 +277,10 @@ const SIMPLIFIED_CHINESE: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "视频..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "脚本和表达式..."),
-    ("app.hide", "Hide EffectCraft", "隐藏 EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "隐藏 Tend's Effects"),
     ("app.hideOthers", "Hide Others", "隐藏其他"),
     ("app.showAll", "Show All", "全部显示"),
-    ("app.quit", "Quit EffectCraft", "退出 EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "退出 Tend's Effects"),
     ("", "File", "文件"),
     ("", "New", "新建"),
     ("file.newProject", "New Project", "新建项目"),
@@ -864,7 +864,7 @@ const SIMPLIFIED_CHINESE: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "从路径创建空对象"),
     ("window.panel", "VR Comp Editor", "VR 合成编辑器"),
     ("", "Help", "帮助"),
-    ("help.docs", "EffectCraft Help...", "EffectCraft 帮助..."),
+    ("help.docs", "Tend's Effects Help...", "Tend's Effects 帮助..."),
     ("help.docs", "Scripting Help...", "脚本帮助..."),
     ("help.docs", "Expression Reference...", "表达式引用..."),
     ("help.docs", "Effect Reference...", "效果参考..."),
@@ -875,11 +875,8 @@ const SIMPLIFIED_CHINESE: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "系统兼容性报告..."),
     ("help.enableLogging", "Enable Logging", "启用日志记录"),
     ("help.revealLogFile", "Reveal Logging File", "显示日志记录文件"),
-    ("help.discord", "Join the ArtCraft Discord...", "加入 ArtCraft 的 Discord 社区..."),
     ("help.reportIssue", "Provide Feedback...", "提供反馈..."),
-    ("help.website", "ArtCraft Website", "ArtCraft 网站"),
-    ("help.appPage", "EffectCraft Home Page", "EffectCraft 主页"),
-    ("help.github", "EffectCraft on GitHub", "GitHub 上的 EffectCraft"),
+    ("help.github", "Tend's Effects on GitHub", "GitHub 上的 Tend's Effects"),
     ("file.openDemoProject", "Open Demo Project", "打开示例项目"),
 ];
 
@@ -887,8 +884,8 @@ const SIMPLIFIED_CHINESE: &[(&str, &str, &str)] = &[
 /// entry per fixed menu row of the engine's menu tree, mirroring `SIMPLIFIED_CHINESE` in the
 /// vocabulary the sibling Craft apps' zh-hant catalogs use.
 const TRADITIONAL_CHINESE: &[(&str, &str, &str)] = &[
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "關於 EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "關於 Tend's Effects..."),
     ("", "Settings...", "設定..."),
     ("app.settings", "General...", "一般..."),
     ("app.settings", "Startup & Repair...", "啟動和修復..."),
@@ -907,10 +904,10 @@ const TRADITIONAL_CHINESE: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "視訊..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "指令碼和運算式..."),
-    ("app.hide", "Hide EffectCraft", "隱藏 EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "隱藏 Tend's Effects"),
     ("app.hideOthers", "Hide Others", "隱藏其他"),
     ("app.showAll", "Show All", "全部顯示"),
-    ("app.quit", "Quit EffectCraft", "結束 EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "結束 Tend's Effects"),
     ("", "File", "檔案"),
     ("", "New", "新增"),
     ("file.newProject", "New Project", "新增專案"),
@@ -1494,7 +1491,7 @@ const TRADITIONAL_CHINESE: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "從路徑建立空物件"),
     ("window.panel", "VR Comp Editor", "VR 合成編輯器"),
     ("", "Help", "說明"),
-    ("help.docs", "EffectCraft Help...", "EffectCraft 說明..."),
+    ("help.docs", "Tend's Effects Help...", "Tend's Effects 說明..."),
     ("help.docs", "Scripting Help...", "指令碼說明..."),
     ("help.docs", "Expression Reference...", "運算式參考..."),
     ("help.docs", "Effect Reference...", "效果參考..."),
@@ -1505,17 +1502,14 @@ const TRADITIONAL_CHINESE: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "系統相容性報告..."),
     ("help.enableLogging", "Enable Logging", "啟用日誌記錄"),
     ("help.revealLogFile", "Reveal Logging File", "顯示日誌檔案"),
-    ("help.discord", "Join the ArtCraft Discord...", "加入 ArtCraft 的 Discord 社群..."),
     ("help.reportIssue", "Provide Feedback...", "提供意見..."),
-    ("help.website", "ArtCraft Website", "ArtCraft 網站"),
-    ("help.appPage", "EffectCraft Home Page", "EffectCraft 首頁"),
-    ("help.github", "EffectCraft on GitHub", "GitHub 上的 EffectCraft"),
+    ("help.github", "Tend's Effects on GitHub", "GitHub 上的 Tend's Effects"),
     ("file.openDemoProject", "Open Demo Project", "開啟範例專案"),
 ];
 
 const JAPANESE: &[(&str, &str, &str)] = &[
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "EffectCraftについて..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "EffectCraftについて..."),
     ("", "Settings...", "設定..."),
     ("app.settings", "General...", "一般..."),
     ("app.settings", "Startup & Repair...", "起動と修復..."),
@@ -1534,10 +1528,10 @@ const JAPANESE: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "ビデオ..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "スクリプトとエクスプレッション..."),
-    ("app.hide", "Hide EffectCraft", "EffectCraftを隠す"),
+    ("app.hide", "Hide Tend's Effects", "EffectCraftを隠す"),
     ("app.hideOthers", "Hide Others", "ほかを隠す"),
     ("app.showAll", "Show All", "すべてを表示"),
-    ("app.quit", "Quit EffectCraft", "EffectCraftを終了"),
+    ("app.quit", "Quit Tend's Effects", "EffectCraftを終了"),
     ("", "File", "ファイル"),
     ("", "New", "新規"),
     ("file.newProject", "New Project", "新規プロジェクト"),
@@ -2121,7 +2115,7 @@ const JAPANESE: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "パスからヌルを作成"),
     ("window.panel", "VR Comp Editor", "VRコンポジションエディター"),
     ("", "Help", "ヘルプ"),
-    ("help.docs", "EffectCraft Help...", "EffectCraftヘルプ..."),
+    ("help.docs", "Tend's Effects Help...", "EffectCraftヘルプ..."),
     ("help.docs", "Scripting Help...", "スクリプトヘルプ..."),
     ("help.docs", "Expression Reference...", "エクスプレッションリファレンス..."),
     ("help.docs", "Effect Reference...", "エフェクトリファレンス..."),
@@ -2132,11 +2126,8 @@ const JAPANESE: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "システム互換性レポート..."),
     ("help.enableLogging", "Enable Logging", "ログ記録を有効化"),
     ("help.revealLogFile", "Reveal Logging File", "ログファイルを表示"),
-    ("help.discord", "Join the ArtCraft Discord...", "ArtCraft Discordに参加..."),
     ("help.reportIssue", "Provide Feedback...", "フィードバックを送信..."),
-    ("help.website", "ArtCraft Website", "ArtCraftウェブサイト"),
-    ("help.appPage", "EffectCraft Home Page", "EffectCraftホームページ"),
-    ("help.github", "EffectCraft on GitHub", "GitHubのEffectCraft"),
+    ("help.github", "Tend's Effects on GitHub", "GitHubのEffectCraft"),
     ("file.openDemoProject", "Open Demo Project", "デモプロジェクトを開く"),
 ];
 
@@ -2144,8 +2135,8 @@ const JAPANESE: &[(&str, &str, &str)] = &[
 /// Ukrainian motion-graphics vocabulary. Product names and technical identifiers stay verbatim.
 /// The (command, source) keys match the other catalogs; no proprietary localization was used.
 const UKRAINIAN: &[(&str, &str, &str)] = &[
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "Про EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "Про Tend's Effects..."),
     ("", "Settings...", "Налаштування..."),
     ("app.settings", "General...", "Загальні..."),
     ("app.settings", "Startup & Repair...", "Запуск і відновлення..."),
@@ -2164,10 +2155,10 @@ const UKRAINIAN: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "Відео..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "Скрипти та вирази..."),
-    ("app.hide", "Hide EffectCraft", "Приховати EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "Приховати Tend's Effects"),
     ("app.hideOthers", "Hide Others", "Приховати решту"),
     ("app.showAll", "Show All", "Показати все"),
-    ("app.quit", "Quit EffectCraft", "Вийти з EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "Вийти з Tend's Effects"),
     ("", "File", "Файл"),
     ("", "New", "Створити"),
     ("file.newProject", "New Project", "Новий проєкт"),
@@ -2751,7 +2742,7 @@ const UKRAINIAN: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "Створення нульових об’єктів із контурів"),
     ("window.panel", "VR Comp Editor", "Редактор композицій VR"),
     ("", "Help", "Довідка"),
-    ("help.docs", "EffectCraft Help...", "Довідка EffectCraft..."),
+    ("help.docs", "Tend's Effects Help...", "Довідка Tend's Effects..."),
     ("help.docs", "Scripting Help...", "Довідка зі скриптів..."),
     ("help.docs", "Expression Reference...", "Довідник виразів..."),
     ("help.docs", "Effect Reference...", "Довідник ефектів..."),
@@ -2762,11 +2753,8 @@ const UKRAINIAN: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "Звіт про сумісність системи..."),
     ("help.enableLogging", "Enable Logging", "Увімкнути журналювання"),
     ("help.revealLogFile", "Reveal Logging File", "Показати файл журналу"),
-    ("help.discord", "Join the ArtCraft Discord...", "Приєднатися до Discord ArtCraft..."),
     ("help.reportIssue", "Provide Feedback...", "Надіслати відгук..."),
-    ("help.website", "ArtCraft Website", "Вебсайт ArtCraft"),
-    ("help.appPage", "EffectCraft Home Page", "Домашня сторінка EffectCraft"),
-    ("help.github", "EffectCraft on GitHub", "EffectCraft на GitHub"),
+    ("help.github", "Tend's Effects on GitHub", "Tend's Effects на GitHub"),
     ("file.openDemoProject", "Open Demo Project", "Відкрити демонстраційний проєкт"),
 ];
 
@@ -2775,8 +2763,8 @@ const UKRAINIAN: &[(&str, &str, &str)] = &[
 /// Wording follows Adobe's Spanish After Effects documentation (helpx.adobe.com/es) where it
 /// names the feature, and macOS Spanish for the app menu.
 const SPANISH: &[(&str, &str, &str)] = &[
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "Acerca de EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "Acerca de Tend's Effects..."),
     ("", "Settings...", "Ajustes..."),
     ("app.settings", "General...", "General..."),
     ("app.settings", "Startup & Repair...", "Inicio y reparación..."),
@@ -2795,10 +2783,10 @@ const SPANISH: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "Vídeo..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "Scripts y expresiones..."),
-    ("app.hide", "Hide EffectCraft", "Ocultar EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "Ocultar Tend's Effects"),
     ("app.hideOthers", "Hide Others", "Ocultar otros"),
     ("app.showAll", "Show All", "Mostrar todo"),
-    ("app.quit", "Quit EffectCraft", "Salir de EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "Salir de Tend's Effects"),
     ("", "File", "Archivo"),
     ("", "New", "Nuevo"),
     ("file.newProject", "New Project", "Nuevo proyecto"),
@@ -3382,7 +3370,7 @@ const SPANISH: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "Crear nulos a partir de trazados"),
     ("window.panel", "VR Comp Editor", "Editor de composición de RV"),
     ("", "Help", "Ayuda"),
-    ("help.docs", "EffectCraft Help...", "Ayuda de EffectCraft..."),
+    ("help.docs", "Tend's Effects Help...", "Ayuda de Tend's Effects..."),
     ("help.docs", "Scripting Help...", "Ayuda de scripts..."),
     ("help.docs", "Expression Reference...", "Referencia de expresiones..."),
     ("help.docs", "Effect Reference...", "Referencia de efectos..."),
@@ -3393,19 +3381,16 @@ const SPANISH: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "Informe de compatibilidad del sistema..."),
     ("help.enableLogging", "Enable Logging", "Habilitar registro"),
     ("help.revealLogFile", "Reveal Logging File", "Mostrar archivo de registro"),
-    ("help.discord", "Join the ArtCraft Discord...", "Unirse al Discord de ArtCraft..."),
     ("help.reportIssue", "Provide Feedback...", "Enviar comentarios..."),
-    ("help.website", "ArtCraft Website", "Sitio web de ArtCraft"),
-    ("help.appPage", "EffectCraft Home Page", "Página de inicio de EffectCraft"),
-    ("help.github", "EffectCraft on GitHub", "EffectCraft en GitHub"),
+    ("help.github", "Tend's Effects on GitHub", "Tend's Effects en GitHub"),
     ("file.openDemoProject", "Open Demo Project", "Abrir proyecto de demostración"),
 ];
 
 /// Brazilian Portuguese: the same (command, English label) keys as `JAPANESE`, one entry
 /// per fixed menu row of the engine's menu tree.
 const PORTUGUESE: &[(&str, &str, &str)] = &[
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "Sobre o EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "Sobre o Tend's Effects..."),
     ("", "Settings...", "Configurações..."),
     ("app.settings", "General...", "Geral..."),
     ("app.settings", "Startup & Repair...", "Inicialização e reparo..."),
@@ -3424,10 +3409,10 @@ const PORTUGUESE: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "Vídeo..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "Scripts e expressões..."),
-    ("app.hide", "Hide EffectCraft", "Ocultar EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "Ocultar Tend's Effects"),
     ("app.hideOthers", "Hide Others", "Ocultar outros"),
     ("app.showAll", "Show All", "Mostrar tudo"),
-    ("app.quit", "Quit EffectCraft", "Sair do EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "Sair do Tend's Effects"),
     ("", "File", "Arquivo"),
     ("", "New", "Novo"),
     ("file.newProject", "New Project", "Novo projeto"),
@@ -4011,7 +3996,7 @@ const PORTUGUESE: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "Criar nulls a partir de caminhos"),
     ("window.panel", "VR Comp Editor", "Editor de composição VR"),
     ("", "Help", "Ajuda"),
-    ("help.docs", "EffectCraft Help...", "Ajuda do EffectCraft..."),
+    ("help.docs", "Tend's Effects Help...", "Ajuda do Tend's Effects..."),
     ("help.docs", "Scripting Help...", "Ajuda de scripting..."),
     ("help.docs", "Expression Reference...", "Referência de expressões..."),
     ("help.docs", "Effect Reference...", "Referência de efeitos..."),
@@ -4022,11 +4007,8 @@ const PORTUGUESE: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "Relatório de compatibilidade do sistema..."),
     ("help.enableLogging", "Enable Logging", "Ativar registro em log"),
     ("help.revealLogFile", "Reveal Logging File", "Revelar arquivo de log"),
-    ("help.discord", "Join the ArtCraft Discord...", "Entrar no Discord do ArtCraft..."),
     ("help.reportIssue", "Provide Feedback...", "Enviar comentários..."),
-    ("help.website", "ArtCraft Website", "Site do ArtCraft"),
-    ("help.appPage", "EffectCraft Home Page", "Página inicial do EffectCraft"),
-    ("help.github", "EffectCraft on GitHub", "EffectCraft no GitHub"),
+    ("help.github", "Tend's Effects on GitHub", "Tend's Effects no GitHub"),
     ("file.openDemoProject", "Open Demo Project", "Abrir projeto de demonstração"),
 ];
 
@@ -4041,8 +4023,8 @@ const RUSSIAN: &[(&str, &str, &str)] = &[
     ("", "Side", "Боковая грань"),
     ("", "Back", "Задняя грань"),
     ("layer.addTextAnimator", "Color", "Цвет"),
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "О EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "О Tend's Effects..."),
     ("", "Settings...", "Настройки..."),
     ("app.settings", "General...", "Общие..."),
     ("app.settings", "Startup & Repair...", "Запуск и восстановление..."),
@@ -4061,10 +4043,10 @@ const RUSSIAN: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "Видео..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "Скрипты и выражения..."),
-    ("app.hide", "Hide EffectCraft", "Скрыть EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "Скрыть Tend's Effects"),
     ("app.hideOthers", "Hide Others", "Скрыть остальные"),
     ("app.showAll", "Show All", "Показать все"),
-    ("app.quit", "Quit EffectCraft", "Выйти из EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "Выйти из Tend's Effects"),
     ("", "File", "Файл"),
     ("", "New", "Создать"),
     ("file.newProject", "New Project", "Новый проект"),
@@ -4642,7 +4624,7 @@ const RUSSIAN: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "Создание нулевых объектов из контуров"),
     ("window.panel", "VR Comp Editor", "Редактор VR-композиций"),
     ("", "Help", "Справка"),
-    ("help.docs", "EffectCraft Help...", "Справка EffectCraft..."),
+    ("help.docs", "Tend's Effects Help...", "Справка Tend's Effects..."),
     ("help.docs", "Scripting Help...", "Справка по скриптам..."),
     ("help.docs", "Expression Reference...", "Справочник по выражениям..."),
     ("help.docs", "Effect Reference...", "Справочник по эффектам..."),
@@ -4653,11 +4635,8 @@ const RUSSIAN: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "Отчет о совместимости системы..."),
     ("help.enableLogging", "Enable Logging", "Включить ведение журнала"),
     ("help.revealLogFile", "Reveal Logging File", "Показать файл журнала"),
-    ("help.discord", "Join the ArtCraft Discord...", "Присоединяйтесь к Discord ArtCraft..."),
     ("help.reportIssue", "Provide Feedback...", "Оставить отзыв..."),
-    ("help.website", "ArtCraft Website", "Сайт ArtCraft"),
-    ("help.appPage", "EffectCraft Home Page", "Главная страница EffectCraft"),
-    ("help.github", "EffectCraft on GitHub", "EffectCraft на GitHub"),
+    ("help.github", "Tend's Effects on GitHub", "Tend's Effects на GitHub"),
     ("file.openDemoProject", "Open Demo Project", "Открыть демонстрационный проект"),
 ];
 
@@ -4670,8 +4649,8 @@ const FRENCH: &[(&str, &str, &str)] = &[
     ("", "Side", "Côté"),
     ("", "Back", "Arrière"),
     ("layer.addTextAnimator", "Color", "Couleur"),
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "À propos d’EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "À propos d’Tend's Effects..."),
     ("", "Settings...", "Préférences..."),
     ("app.settings", "General...", "Général..."),
     ("app.settings", "Startup & Repair...", "Démarrage et réparation..."),
@@ -4690,10 +4669,10 @@ const FRENCH: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "Vidéo..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "Scripts et expressions..."),
-    ("app.hide", "Hide EffectCraft", "Masquer EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "Masquer Tend's Effects"),
     ("app.hideOthers", "Hide Others", "Masquer les autres"),
     ("app.showAll", "Show All", "Tout afficher"),
-    ("app.quit", "Quit EffectCraft", "Quitter EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "Quitter Tend's Effects"),
     ("", "File", "Fichier"),
     ("", "New", "Nouveau"),
     ("file.newProject", "New Project", "Nouveau projet"),
@@ -5271,7 +5250,7 @@ const FRENCH: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "Créer des nuls à partir des tracés"),
     ("window.panel", "VR Comp Editor", "Éditeur de composition VR"),
     ("", "Help", "Aide"),
-    ("help.docs", "EffectCraft Help...", "Aide EffectCraft..."),
+    ("help.docs", "Tend's Effects Help...", "Aide Tend's Effects..."),
     ("help.docs", "Scripting Help...", "Aide sur les scripts..."),
     ("help.docs", "Expression Reference...", "Référence des expressions..."),
     ("help.docs", "Effect Reference...", "Référence des effets..."),
@@ -5282,11 +5261,8 @@ const FRENCH: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "Rapport de compatibilité du système..."),
     ("help.enableLogging", "Enable Logging", "Activer la journalisation"),
     ("help.revealLogFile", "Reveal Logging File", "Révéler le fichier journal"),
-    ("help.discord", "Join the ArtCraft Discord...", "Rejoindre le Discord ArtCraft..."),
     ("help.reportIssue", "Provide Feedback...", "Envoyer des commentaires..."),
-    ("help.website", "ArtCraft Website", "Site web ArtCraft"),
-    ("help.appPage", "EffectCraft Home Page", "Page d’accueil EffectCraft"),
-    ("help.github", "EffectCraft on GitHub", "EffectCraft sur GitHub"),
+    ("help.github", "Tend's Effects on GitHub", "Tend's Effects sur GitHub"),
     ("file.openDemoProject", "Open Demo Project", "Ouvrir le projet de démonstration"),
 ];
 
@@ -5299,8 +5275,8 @@ const GERMAN: &[(&str, &str, &str)] = &[
     ("", "Side", "Seite"),
     ("", "Back", "Rückseite"),
     ("layer.addTextAnimator", "Color", "Farbe"),
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "Über EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "Über Tend's Effects..."),
     ("", "Settings...", "Voreinstellungen..."),
     ("app.settings", "General...", "Allgemein..."),
     ("app.settings", "Startup & Repair...", "Start und Reparatur..."),
@@ -5319,10 +5295,10 @@ const GERMAN: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "Video..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "Skripting und Ausdrücke..."),
-    ("app.hide", "Hide EffectCraft", "EffectCraft ausblenden"),
+    ("app.hide", "Hide Tend's Effects", "Tend's Effects ausblenden"),
     ("app.hideOthers", "Hide Others", "Andere ausblenden"),
     ("app.showAll", "Show All", "Alle einblenden"),
-    ("app.quit", "Quit EffectCraft", "EffectCraft beenden"),
+    ("app.quit", "Quit Tend's Effects", "Tend's Effects beenden"),
     ("", "File", "Datei"),
     ("", "New", "Neu"),
     ("file.newProject", "New Project", "Neues Projekt"),
@@ -5900,7 +5876,7 @@ const GERMAN: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "Null-Objekte aus Pfaden erstellen"),
     ("window.panel", "VR Comp Editor", "VR-Kompositionseditor"),
     ("", "Help", "Hilfe"),
-    ("help.docs", "EffectCraft Help...", "EffectCraft-Hilfe..."),
+    ("help.docs", "Tend's Effects Help...", "Tend's Effects-Hilfe..."),
     ("help.docs", "Scripting Help...", "Hilfe zu Skripts..."),
     ("help.docs", "Expression Reference...", "Ausdrucksreferenz..."),
     ("help.docs", "Effect Reference...", "Effektreferenz..."),
@@ -5911,11 +5887,8 @@ const GERMAN: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "Bericht zur Systemkompatibilität..."),
     ("help.enableLogging", "Enable Logging", "Protokollierung aktivieren"),
     ("help.revealLogFile", "Reveal Logging File", "Protokolldatei anzeigen"),
-    ("help.discord", "Join the ArtCraft Discord...", "ArtCraft-Discord beitreten..."),
     ("help.reportIssue", "Provide Feedback...", "Feedback senden..."),
-    ("help.website", "ArtCraft Website", "ArtCraft-Website"),
-    ("help.appPage", "EffectCraft Home Page", "EffectCraft-Startseite"),
-    ("help.github", "EffectCraft on GitHub", "EffectCraft auf GitHub"),
+    ("help.github", "Tend's Effects on GitHub", "Tend's Effects auf GitHub"),
     ("file.openDemoProject", "Open Demo Project", "Demoprojekt öffnen"),
 ];
 
@@ -5928,8 +5901,8 @@ const CZECH: &[(&str, &str, &str)] = &[
     ("", "Side", "Boční strana"),
     ("", "Back", "Zadní strana"),
     ("layer.addTextAnimator", "Color", "Barva"),
-    ("", "EffectCraft", "EffectCraft"),
-    ("app.about", "About EffectCraft...", "O aplikaci EffectCraft..."),
+    ("", "Tend's Effects", "Tend's Effects"),
+    ("app.about", "About Tend's Effects...", "O aplikaci Tend's Effects..."),
     ("", "Settings...", "Nastavení..."),
     ("app.settings", "General...", "Obecné..."),
     ("app.settings", "Startup & Repair...", "Spuštění a oprava..."),
@@ -5948,10 +5921,10 @@ const CZECH: &[(&str, &str, &str)] = &[
     ("app.settings", "Video...", "Video..."),
     ("app.settings", "3D...", "3D..."),
     ("app.settings", "Scripting & Expressions...", "Skripty a výrazy..."),
-    ("app.hide", "Hide EffectCraft", "Skrýt EffectCraft"),
+    ("app.hide", "Hide Tend's Effects", "Skrýt Tend's Effects"),
     ("app.hideOthers", "Hide Others", "Skrýt ostatní"),
     ("app.showAll", "Show All", "Zobrazit vše"),
-    ("app.quit", "Quit EffectCraft", "Ukončit EffectCraft"),
+    ("app.quit", "Quit Tend's Effects", "Ukončit Tend's Effects"),
     ("", "File", "Soubor"),
     ("", "New", "Nový"),
     ("file.newProject", "New Project", "Nový projekt"),
@@ -6530,7 +6503,7 @@ const CZECH: &[(&str, &str, &str)] = &[
     ("window.panel", "Create Nulls From Paths", "Vytvořit prázdné objekty z cest"),
     ("window.panel", "VR Comp Editor", "Editor kompozice VR"),
     ("", "Help", "Nápověda"),
-    ("help.docs", "EffectCraft Help...", "Nápověda k EffectCraft..."),
+    ("help.docs", "Tend's Effects Help...", "Nápověda k Tend's Effects..."),
     ("help.docs", "Scripting Help...", "Nápověda ke skriptování..."),
     ("help.docs", "Expression Reference...", "Referenční příručka výrazů..."),
     ("help.docs", "Effect Reference...", "Referenční příručka efektů..."),
@@ -6541,11 +6514,8 @@ const CZECH: &[(&str, &str, &str)] = &[
     ("help.systemReport", "System Compatibility Report...", "Zpráva o kompatibilitě systému..."),
     ("help.enableLogging", "Enable Logging", "Povolit protokolování"),
     ("help.revealLogFile", "Reveal Logging File", "Zobrazit soubor protokolu"),
-    ("help.discord", "Join the ArtCraft Discord...", "Připojit se na Discord ArtCraft..."),
     ("help.reportIssue", "Provide Feedback...", "Poskytnout zpětnou vazbu..."),
-    ("help.website", "ArtCraft Website", "Web ArtCraft"),
-    ("help.appPage", "EffectCraft Home Page", "Domovská stránka EffectCraft"),
-    ("help.github", "EffectCraft on GitHub", "EffectCraft na GitHubu"),
+    ("help.github", "Tend's Effects on GitHub", "Tend's Effects na GitHubu"),
     ("file.openDemoProject", "Open Demo Project", "Otevřít ukázkový projekt"),
 ];
 
