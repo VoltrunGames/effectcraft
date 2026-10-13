@@ -1,42 +1,25 @@
-# EffectCraft app icon
+# Tend's Effects app icon
 
-**Creature:** a unicorn, as an engraved head-and-shoulders bust looking out of the tile.
+A white tent ("Tend" → tent) on a rounded-square gradient field; the family of Tend's apps shares
+the tent and differs in colour and one small extra: sparkles next to the tent on a violet field.
 
-**Style:** an ink engraving portrait in the Crafting Apps' owl-template framing (the FilmCraft owl):
-full-bleed colour field, tight head-and-shoulders crop, the body running off the bottom and right edges.
+## Provenance
 
-**Tile:** 512 × 512 viewBox, rounded square `rx=112`, clipped; no border or roundel.
-
-**Palette** (exactly three colours):
-
-| Colour | Hex | Used for |
-|---|---|---|
-| App colour (EffectCraft pink) | `#e0368f` | the full-bleed field |
-| Paper | `#efe9dc` | the figure |
-| Ink | `#0b0b0c` | line work and contour |
-
-**Provenance:** the project owner drew it in ArtCraft (a 2880 px engraving-style image, kept in
-craftrules at `assets/app-icons/effectcraft/source.png`). It was vectorised with craftrules
-`assets/logo-options/_tools/vectorize_tile.py`, which keys out the field and traces the ink with potrace.
-Licence: see [LICENSE.txt](LICENSE.txt) (MIT OR Apache-2.0, like the repo).
+The design was generated with Gemini from prompts written by the project owner (Alexander, Voltrun
+Games) and converted to the icon formats by a script: the background was keyed out into a transparent
+rounded square and rendered at each size. It is original work for this project (no third-party
+material), licensed [MIT OR Apache-2.0](LICENSE.txt). The source image is raster, so the `.svg`
+files embed a PNG; they are not true vector drawings. Check the terms of the tool you use if you
+sell the app commercially.
 
 ## Files
 
 | File | What |
 |---|---|
-| `effectcraft.svg` | master vector, traced at 2048 px (canonical) |
-| `effectcraft-small.svg` | lighter vector (~350 KB), traced at 1024 px; also the web favicon |
+| `effectcraft.svg`, `effectcraft-small.svg` | SVG wrappers around the PNG artwork (1024 px and 256 px) |
 | `effectcraft-1024.png` | 1024 px render |
-| `effectcraft-macos-512.png` | runtime Dock icon on macOS, on Apple's 824/1024 grid |
-| `effectcraft.icns` | macOS icon (Apple grid) |
-| `effectcraft.ico` | Windows icon, 16–256 px; embedded in `effectcraft.exe` by `apps/effectcraft/build.rs` |
-| `hicolor/<n>x<n>/apps/ai.storyteller.effectcraft.png` | Linux icon theme, 16–512 px; the 256 px one is the runtime icon on Windows and Linux |
-| `hicolor/scalable/apps/ai.storyteller.effectcraft.svg` | Linux scalable icon |
+| `effectcraft.icns` | macOS bundle icon (Apple's icon grid: 824 of 1024 px with a transparent margin) |
+| `effectcraft.ico` | Windows icon, 16–256 px (embedded in the exe by `build.rs`) |
+| `hicolor/<size>/apps/ai.storyteller.effectcraft.png`, `hicolor/scalable/…svg` | Linux icon theme |
 
-App ID: `ai.storyteller.effectcraft` (Wayland app ID, `packaging/linux/ai.storyteller.effectcraft.desktop`).
-
-## Regenerate
-
-Copy a new `icon-master.svg` / `icon.svg` from craftrules `assets/app-icons/effectcraft/` over
-`effectcraft.svg` / `effectcraft-small.svg`, then run `packaging/icons.sh` (needs `resvg`; `iconutil`
-on macOS for the `.icns`). Copy `effectcraft-small.svg` to `apps/effectcraft-web/web/favicon.svg` too.
+Also derived from it: the in-app icon and the web favicon in `apps/*-web/web/`.

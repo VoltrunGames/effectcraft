@@ -1,8 +1,8 @@
 asset:        favicon.svg
 title:        EffectCraft web app icon (favicon)
-author:       EffectCraft contributors (drawing by the project owner in ArtCraft)
+author:       EffectCraft contributors (generated with Gemini by the project owner)
 source:       original work
 license:      MIT OR Apache-2.0
 license-file: assets/app-icon/LICENSE.txt
-added:        2026-10-02 by EffectCraft contributors (Claude agent, app icon)
-notes:        Copy of assets/app-icon/effectcraft-small.svg (the lighter vector trace of the app icon). Replaces the earlier code-drawn split-square mark.
+added:        2026-10-13 (icon replaced; tent design generated with Gemini)
+notes:        Copy of assets/app-icon/effectcraft-small.svg (the small SVG of the app icon). Replaces the earlier code-drawn split-square mark.
